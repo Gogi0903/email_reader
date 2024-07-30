@@ -28,7 +28,7 @@ class MainWindow(QWidget):
         elif not os.listdir(self.file_dir):
             QMessageBox.information(self, 'Info!', 'A leveleket tartalmazó "emails" könyvtár üres.')
         
-        xls = r'\\bosch.com\dfsrb\DfsDE\DIV\AE\NE-CT\010_Dept\020_EAI\050_Crossfct\101_Materialdaten\Mechanik_Stoff\Materialdaten_Mechanik_Stoff_V2-3_NEW.xlsm'
+        xls = r'path/to/file'
         self.reader = MsgReader(file_dir=self.file_dir)
         self.xls_processor = XlsProcessor(file_path=xls)
 
